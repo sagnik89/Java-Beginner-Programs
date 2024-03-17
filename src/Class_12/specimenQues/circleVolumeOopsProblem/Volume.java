@@ -1,22 +1,29 @@
 package Class_12.specimenQues.circleVolumeOopsProblem;
 
-public class Volume {
+public class Volume extends Circle {
 
-    Circle base; // Composition: Volume has a Circle as its base
     double height, volume;
 
-    Volume(double r, double h) {
-        base = new Circle(r); // Create a Circle object as the base
+    Volume(double h, double r) {
+        super(r);
         height = h;
     }
 
     double calculate() {
-        volume = base.area * height;
+        super.cal_area();
+        volume = super.area * height;
         return volume;
     }
 
     void display() {
-        base.display();
+        super.display();
         System.out.println("Volume of the cylinder: " + volume);
+    }
+
+    public static void main(String[] args) {
+        Volume ob = new Volume(10, 5);
+
+        ob.calculate();
+        ob.display();
     }
 }
