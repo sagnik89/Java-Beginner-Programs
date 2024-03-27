@@ -10,7 +10,7 @@ public class binaryToDecimalRecursion {
     }
 
     public static void main(String[] args) {
-        int n = 10;
+        int n = 15;
 
         binaryToDecimal(n);
 

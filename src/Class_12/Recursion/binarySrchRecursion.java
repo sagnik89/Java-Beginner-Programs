@@ -23,7 +23,7 @@ public class binarySrchRecursion {
 
     public static void main(String[] args) {
         int ar[] = { 1, 2, 3, 4, 5, 6, 7 };
-        int val = 87;
+        int val = 7;
 
         int res = binary(ar, val, 0, ar.length - 1);
 
